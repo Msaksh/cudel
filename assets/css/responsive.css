@@ -1,0 +1,370 @@
+@charset "utf-8";
+/* CSS Document *
+
+/*  ###########   Responsive Queries  ############ */
+@media screen and (max-width: 991px) {
+
+header .navbar .navbar-brand {
+    left: 0;
+}
+.closeBurgerMenu {
+    background: url("../img/closeIcon.svg") no-repeat left;
+    height: 30px;
+    border: none;
+    background-size: 16px;
+    background-position: center;
+    width: 30px;
+    cursor: pointer;
+}
+.navbar-toggler, .navbar-toggler:focus {
+	border: none;
+	padding: 0.25rem;
+	font-size: 1.3rem;
+	box-shadow: none;
+	position: absolute;
+	right: 10px;
+	top: 13px;
+}
+header .navbar .navbar-brand {
+  max-width: 120px;
+  padding: 10px 0;
+}
+header .navbar-collapse{
+	position: fixed;
+	top:0; 
+	bottom: 0;
+	left: 100%;
+	width: 100%;
+	z-index: 999;	
+	visibility: hidden;
+	background-color: #fff;    
+	transition: visibility .2s ease-in-out, -webkit-transform .2s ease-in-out;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+header .navbar-collapse.show{
+    visibility: visible;
+    transform: translateX(-100%);
+}	
+.mobMenuHeader {
+    display: flex;
+    padding: 5px 18px;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    z-index: 99;
+    top: 0;
+    left: 0;
+    right: 0;
+}
+.closeBurgerMenu .navbar-toggler-icon{display: none;}
+header .navbar-collapse .navbar-nav {
+    /*padding: 20px !important;*/
+    text-align: center;
+    max-width: 100%;
+    margin: 0 auto;
+    max-width: 350px;
+}
+header .navbar-collapse .navbar-nav .nav-link {
+    padding: 15px;
+    font-size: 18px;
+    font-weight: 400;
+}
+header .navbar .mobMenuHeader .navbar-brand {
+    padding: 0;
+    max-width: 150px;
+    box-shadow: none;
+    margin: 30px 0 0 0;
+    left: initial;
+}
+.navbar .navbar-nav > li.empLogin a {
+    padding: 10px 15px;
+    margin-top: 20px;
+}
+.sliderMainDiv {
+    border-left: 4px solid #fff;
+    border-right: 4px solid #fff;
+    margin: 0;
+    width: 100%;
+}
+.sliderMainDiv a {
+    height: 320px;
+}
+.sliderMainDiv .packPrice {
+    width: 130px;
+    right: 0px;
+    top: 30px;
+}
+.sliderMainDiv .packInner {
+    padding-bottom: 0;
+    bottom: 30px;
+    right: 0;
+}
+.sliderMainDiv .packInner h6 {
+    font-size: 16px;
+    padding: 9px 15px 11px 10px;
+    margin-bottom: 20px;
+    margin-left: 0px;
+	max-width: 70%;
+}
+.sliderMainDiv .packInner h4 {
+    font-size: 20px;
+    padding: 12px 15px 12px 15px;
+}
+.banner-bg {
+    background-image: none;
+}
+.owl-carousel .owl-nav button.owl-prev, .owl-carousel .owl-nav button.owl-next {
+    width: 44px;
+    height: 44px;
+    font-size: 32px;
+}
+.ourServices{padding: 50px 5px 30px 5px;}
+.sectionTitle {
+    padding: 0 10px 30px 10px;
+}
+.sectionTitle h6 {
+    font-size: 16px;
+}
+.sectionTitle h2 {
+    font-size: 30px;
+}
+.servicesPack .packInner {
+    padding: 25px;
+}
+/* .servicesPack.largePack .packInner h4 {
+    font-size: 18px;
+}
+.largePack a, .largePack a img.packImg {
+    min-height: 350px;
+} */
+.bottomServicesPack .servicesPack a, .servicesPack a {
+    /* max-height: 300px; */
+    /* min-height: 300px; */
+    max-width: 414px;
+}
+.servicesPack a:before {
+    top: 10px;
+    right: 10px;
+    bottom: 10px;
+    left: 10px;
+}
+.servicesPack {margin-bottom: 10px;}
+.workProcess {
+    padding: 50px 0 20px 0;
+}
+.workProcess .workCols h5 {
+    margin-top: 8px;
+    margin-bottom: 8px;
+}
+.whyUsImg{display: none;}
+.whyCudelSec {
+    padding: 50px 5px 20px 5px;
+}
+.whyUsCol .imgSec {
+    width: 70px;
+    height: 70px;
+    padding: 10px;
+}
+.whyUsCol .wyData {
+    padding-left: 20px;
+    width: calc(100% - 70px);
+}
+.coronaSec {
+	padding: 20px 15px;
+	border-radius: 15px;
+	width: calc(100% - 10px);
+	margin: 0 auto;
+	background-image: none;
+}
+.coronaSec .covidTitle {
+    margin-bottom: 20px;
+    flex-direction: column;
+}
+.coronaSec .covidTitle img {
+    max-width: 130px;
+}
+.coronaSec .covidTitle h2 {
+    font-size: 26px;
+    padding-left: 0;
+    padding-top: 5px;
+}
+.coronaSec .coronaCols {
+    padding: 10px 0px;
+}
+.coronaSec .coronaCols img {
+    max-width: 150px;
+}
+.coronaSec .coronaCols h4 {
+    margin: 10px auto 10px auto;
+    font-size: 20px;
+    max-width: 200px;
+}
+.testimonialSec {
+    padding: 50px 10px;
+}
+.userRating {
+    font-size: 20px;
+    padding-bottom: 0px;
+}
+.testimonialDes p {
+    margin: 10px 0 0;
+    font-size: 18px;
+    line-height: 26px;
+}
+.userDetails {
+    padding-top: 20px
+}
+.userDetails .img-thumbnail {
+    width: 120px;
+    height: 120px;
+}
+.userDetails h3 {
+    font-size: 22px;
+    margin-bottom: 2px;
+    margin-top: 15px;
+}
+.coffeeHomeWrapper {
+    padding: 0 0 50px 0;
+}
+.coffeeHomeSec {
+	padding: 24px 15px 40px 15px;
+	border-radius: 6px;
+	width: calc(100% - 10px);
+	margin: 0 auto;
+	text-align: center;
+	/* margin-bottom: 50px; */
+}
+.coffeeHomeSec .ladyPicSec {
+	text-align: center;
+	padding: 10px 0 20px 0;
+}
+.coffeeHomeSec .coffeeDataSec .coffeePrice {
+    font-size: 32px;
+}
+.copyright {
+    padding: 10px;
+    margin-top: 30px;
+    margin-left: -10px;
+    margin-right: -10px;
+}
+.footer-logo .img-responsive {max-width: 80px;}
+.footer {
+    padding: 50px 10px 0 10px;
+    background-size: 50%;
+    background-position: left bottom 40px, right top;
+}
+.footer h5 {
+    font-size: 20px;
+    margin-bottom: 15px !important;
+    margin-top: 20px !important;
+}
+.siteMenu li {
+    padding-bottom: 10px;
+}
+.socialMedia li {
+    padding-left: 0 !important;
+}
+.cudelSlide .carousel-control-next {
+    right: -10px;
+}
+.cudelSlide .carousel-control-prev {
+    left: -10px;
+}
+.cudelSlide .carousel-control-prev, .cudelSlide .carousel-control-next {
+    width: 40px;
+    height: 40px;
+    font-size: 22px;
+    top: 20px;
+}
+.footer span img {
+    max-width: 80px;
+    max-height: 36px;
+}
+.priceOff {
+    width: 90px !important;
+    position: absolute;
+    bottom: 40px;
+    right: 0px;
+}
+.footer span {
+    max-width: 60px;
+}
+.coffeeHomeSec .coffeeDataSec {padding: 0;}
+.coffeeHomeSec .coffeeDataSec h2 {font-size: 24px;}
+.popupData {
+    padding-top: 20px;
+}
+.customAboutData .aboutDataInner {
+    padding: 15px 20px 1px 20px;
+}
+.customAboutData {
+    padding: 18px 5px;
+}
+.whoweare {
+    padding: 50px 5px;
+}
+.whoweareData {
+    font-size: 16px;
+    line-height: 24px;
+    padding-left: 0;
+    padding-top: px;
+}
+.whoweare .sectionTitle {
+    padding: 0 0 20px 0;
+}
+.whoweareImg {
+    padding: 30px;
+    min-height: inherit;
+	display: none;
+}
+.whoweareImg img {max-height: 150px;}
+.bookservice {
+    font-size: 18px;
+    line-height: 23px;
+}
+.aboutCudel {
+    padding: 50px 5px;
+    /* margin-top: 50px; */
+}
+.
+.aboutCudel .sectionTitle {
+    padding-bottom: 20px;
+}
+.aboutCudel .whoweareData {
+    padding: 0;
+}
+.aboutCudel .whoweareImg {
+    margin-bottom: 20px;
+	padding: 15px;
+}
+.aboutCudel .whoweareImg img {
+    max-height: 120px;
+}
+.bottomServicesPack .servicesPack a img.packImg {
+    margin-top: -20px;
+}
+
+}
+
+@media screen and (min-width: 992px) and (max-width: 1199px){ 
+.cudelSlide .carousel-control-prev {left: -10px;}
+.cudelSlide .carousel-control-next {right: -10px;}
+.coronaSec .covidTitle {
+    text-align: left;
+}
+.coronaSec .covidTitle h2 {
+    font-size: 32px;
+}
+.coronaSec .covidTitle img {
+    max-width: 150px;
+}
+.coronaSec .coronaCols img {
+    max-width: 100%;
+}
+.coronaSec .coronaCols h4 {
+    font-size: 18px;
+}
+
+}

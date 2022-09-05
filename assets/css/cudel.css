@@ -1,0 +1,70 @@
+.newBG {
+	width: 100%;
+	/* height: 280px !important; */
+	/* border: 2px solid red;  */
+}
+
+.whoweare {
+	/* border: 2px solid blue; */
+	background: linear-gradient(to right, #3b2adea6, #00000096),
+		url("../images/cudelPartners/cp1.jpeg");
+	background-size: cover;
+}
+
+.whoweareData {
+	color: rgb(221, 221, 221);
+	border-radius: 20px;
+	padding: 20px;
+	/* box-shadow: 0px 0px 5px white; */
+	background: rgba(0, 0, 0, 0.404);
+}
+
+.whoweareData .sectionTitle > h2 {
+	color: rgb(187, 187, 187);
+}
+
+.whoweareimage {
+	font-size: 5rem !important;
+}
+.pincode {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	/*border:  2px solid red;*/
+}
+.pincode > input {
+	outline: none;
+	border-radius: 20px 0px 0px 0px;
+	border: none;
+	padding: 10px 30px;
+	width: 300px;
+	box-shadow: 0px 0px 5px #3b2ade;
+}
+.pincode > button {
+	border-radius: 0px 0px 20px 0px;
+	background-color: #3b2ade;
+	outline: none;
+	border: none;
+	color: white;
+	padding: 10px 20px;
+	box-shadow: 0px 0px 5px #3b2ade;
+}
+
+/* .packInner > h4 {
+	border: 2px solid red !important;
+} */
+
+@media only screen and (max-width: 900px) {
+	.newBG {
+		/* margin-bottom: 160px !important; */
+		height: fit-content;
+		/* height: 42vh !important; */
+	}
+
+	.pincode {
+		width: 100%;
+	}
+	.banner-bg > h1 {
+		font-size: 2rem !important;
+	}
+}
